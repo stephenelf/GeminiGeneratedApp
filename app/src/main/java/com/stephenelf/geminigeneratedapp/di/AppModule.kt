@@ -1,5 +1,6 @@
 package com.stephenelf.geminigeneratedapp.di
 
+import com.stephenelf.geminigeneratedapp.data.remote.GymsApiService
 import com.stephenelf.geminigeneratedapp.data.repository.GymsRepositoryImpl
 import com.stephenelf.geminigeneratedapp.domain.repository.GymsRepository
 import dagger.Module
@@ -20,7 +21,7 @@ import kotlin.jvm.java
 @InstallIn(SingletonComponent::class)
 object AppModule {
 
-    private const val BASE_URL = "[https://data.townofcary.org/api/explore/v2.1/](https://data.townofcary.org/api/explore/v2.1/)"
+    private const val BASE_URL = "https://data.townofcary.org/api/explore/v2.1/"
 
     @Provides
     @Singleton

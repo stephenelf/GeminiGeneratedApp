@@ -1,5 +1,6 @@
 package com.stephenelf.geminigeneratedapp.data.repository
 
+import android.util.Log
 import com.stephenelf.geminigeneratedapp.data.remote.GymsApiService
 import com.stephenelf.geminigeneratedapp.data.remote.dto.GymDto
 import com.stephenelf.geminigeneratedapp.domain.model.Gym
@@ -28,12 +29,12 @@ class GymsRepositoryImpl @Inject constructor(
     // Mapper function to convert a DTO to a domain model.
     private fun GymDto.toDomain(): Gym {
         return Gym(
-            name = facility_name ?: "Unknown Facility",
-            type = facility_type ?: "N/A",
-            location = location_name ?: "No Location",
+            name = facility_title ?: "Unknown Facility",
+            type = community_center ?: "N/A",
+            location = location ?: "No Location",
             status = status ?: "No Status",
             phone = phone ?: "No Phone",
-            address = address ?: "No Address"
+            address = address11 ?: "No Address"
         )
     }
 }
