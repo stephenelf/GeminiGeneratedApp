@@ -1,4 +1,8 @@
 package com.stephenelf.gemini2.domain.model
+
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
 @Parcelize
 data class Gym(
     val id: String, // We'll generate a unique ID
@@ -7,4 +11,4 @@ data class Gym(
     val activities: String,
     val phone: String,
     val scheduleUrl: String
-) : Parcelable
+): Parcelable

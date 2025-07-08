@@ -1,17 +1,20 @@
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt")
-    id("com.google.dagger.hilt.android")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    kotlin("kapt")
+    // Add the Compose Compiler plugin
+    alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.hilt)
+    alias(libs.plugins.kotlin.parcelize)
 }
 
 android {
-    namespace = "com.example.gymfinder"
+    namespace = "com.stephenelf.gemini2"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.gymfinder"
-        minSdk = 24
+        applicationId = "com.stephenelf.gemini2"
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"

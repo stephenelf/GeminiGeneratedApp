@@ -3,6 +3,13 @@ package com.stephenelf.gemini2.di
 import com.stephenelf.gemini2.data.remote.GymApiService
 import com.stephenelf.gemini2.data.repository.GymRepositoryImpl
 import com.stephenelf.gemini2.domain.repository.GymRepository
+import dagger.Module
+import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
