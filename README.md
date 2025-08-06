@@ -12,3 +12,11 @@ Branch:
 - complexprompt: a more complex prompt including a more complex application
 
   https://www.linkedin.com/pulse/ai-generated-android-development-more-complex-briones-sanjuan-ahhyf
+
+- geminiui: generating Home screens with Gemini, ChatGTP, Claude and Deepseek
+
+  https://www.linkedin.com/pulse/ai-generated-mobile-ui-development-reality-check-briones-sanjuan-wnznf
+  https://www.linkedin.com/pulse/ai-generated-mobile-ui-development-part-ii-reality-briones-sanjuan-bxjrf
+
+- simplepromptmvi: MVI architecture generated with simple prompt
+- hexagonal: Hexagonal architecture generated with a simple prompt
